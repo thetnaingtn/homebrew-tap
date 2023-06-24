@@ -5,11 +5,11 @@
 class Forky < Formula
   desc ""
   homepage "https://github.com/thetnaingtn/forky"
-  version "0.5.0"
+  version "0.5.1"
 
   on_macos do
-    url "https://github.com/thetnaingtn/forky/releases/download/v0.5.0/forky_0.5.0_darwin_all.tar.gz"
-    sha256 "db992bb65661ca59921ca97a96be6901b24f64e1f1ac1cab237ee32e1344c8d2"
+    url "https://github.com/thetnaingtn/forky/releases/download/v0.5.1/forky_0.5.1_darwin_all.tar.gz"
+    sha256 "d511b01e3c7691c39e60522221a6cd98a9d6daa2f27d67701ff8027a6791dac0"
 
     def install
       bin.install "forky"
@@ -18,16 +18,16 @@ class Forky < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thetnaingtn/forky/releases/download/v0.5.0/forky_0.5.0_linux_arm64.tar.gz"
-      sha256 "b8f0a91dd1a4dc3268ccf3ca18a3702606b8cadf56f90d3c9efc78d010eeb0ad"
+      url "https://github.com/thetnaingtn/forky/releases/download/v0.5.1/forky_0.5.1_linux_arm64.tar.gz"
+      sha256 "83c69b181f9b36ed73735698b92837dae1b0db9142137d8a277c882f9b53e9ef"
 
       def install
         bin.install "forky"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/thetnaingtn/forky/releases/download/v0.5.0/forky_0.5.0_linux_amd64.tar.gz"
-      sha256 "f196224c80d8a528ee4d1f7e1f53131bad21586e4cd468d8916432d248cead96"
+      url "https://github.com/thetnaingtn/forky/releases/download/v0.5.1/forky_0.5.1_linux_amd64.tar.gz"
+      sha256 "da3c125587f1f25f1b742125bcc5313e2f08a0f0f039e4e4e5ec7343c21f7ef3"
 
       def install
         bin.install "forky"
